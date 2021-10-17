@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:id="@+id/Home"
+            android:text=" Elibility"
+            android:textColor="@color/white"
+            android:background="@android:color/holo_blue_dark"
+            android:textSize="24sp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-10dp"
+            android:src="@drawable/home"
+            android:translationX="-33dp"
+            android:background="@android:color/transparent"
+            android:translationY="-9dp"
+            android:onClick="goHome"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Existing Conditions"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/spinnerExistingConditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <Spinner
+        android:id="@+id/spinnerAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Occupation"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <Spinner
+        android:id="@+id/spinnerOccupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I live in a skilled learning facility or assisted learning facility"
+        android:id="@+id/checkboxLearningFacility"
+        android:layout_marginTop="60dp"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I live or work in Champaign County,IL"
+        android:id="@+id/checkboxChampaign"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I have NOT received a vaccine in the last 14 days"
+        android:id="@+id/checkboxRecentVaccine"
+        android:layout_marginTop="17dp"
+        android:textSize="20dp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I have NOT had a monocolonal antibody infusion for COVID-19 in the last 90 days "
+        android:id="@+id/checkboxAntibodyInfusion"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#80FF0000"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="submitEligibilityCheck"
+        android:text="Submit"
+        app:backgroundTint="#258FFF" />
+
+</LinearLayout>
+

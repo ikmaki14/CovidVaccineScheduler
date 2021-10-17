@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    tools:context=".completeActivity">
+
+
+    <TextView
+        android:id="@+id/complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:text="Complete!"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="80dp"
+        android:text="Add To Calendar"
+        app:backgroundTint="#3686FF"
+        app:iconTint="#3686FF" />
+
+    <TextView
+        android:id="@+id/_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:text="Would you like to schedule another person?"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/yes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/purple_700"
+            android:text="Yes"
+            android:translationY="-90dp"
+            android:translationX="-50dp"
+            app:backgroundTint="#3686FF"
+            android:onClick="registerAgain"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/no_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/purple_700"
+            android:translationY="-90dp"
+            android:text="No"
+            android:translationX="50dp"
+            app:backgroundTint="#3686FF"
+            android:onClick="doneRegistering"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vaccine Location:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:translationY="190dp"
+            android:translationX="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1901 N Market St, Champaign, IL, 61821"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:translationY="210dp"
+            android:translationX="19dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please bring your health insurance and a photo id."
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:translationY="240dp"
+            android:translationX="12dp" />
+    </RelativeLayout>
+
+</LinearLayout>

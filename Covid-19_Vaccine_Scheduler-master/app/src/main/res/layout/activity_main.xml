@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:id="@+id/Home"
+            android:text=" Home"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-10dp"
+            android:src="@drawable/settings"
+            android:translationX="-50dp"
+            android:onClick="goToSettings"
+            android:translationY="-12dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COVID-19 VACCINE SCHEDULING"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/needle"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="60dp"
+        android:background="#3686FF"
+        android:onClick="checkEligibility"
+        android:text="Check Eligibility"
+        app:backgroundTint="#258FFF" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="60dp"
+        android:onClick="viewAppointments"
+        android:text="Current Appointments"
+        app:backgroundTint="#258FFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App made in collaboration with Carle Hospital"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="60dp"/>
+
+</LinearLayout>
